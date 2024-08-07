@@ -1,0 +1,109 @@
+body {
+  background-color: #070710;
+  /* background-color: #111125; */
+  color: #ccceef;
+  /* color: #bdbfde; */
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.star {
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+/* .blink-cursor {
+  display: inline-block;
+  margin-left: 5px;
+  width: 1ch;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  50.1%,
+  100% {
+    opacity: 0;
+  }
+} */
+
+
+
+
+
+
+
+.box:hover{
+  -webkit-box-shadow: 0px 1px 9px 0px rgb(83, 58, 173);
+  -moz-box-shadow: 0px 1px 9px 0px rgb(83, 58, 173);
+  box-shadow: 0px 1px 9px 0px rgb(83, 58, 173);
+}
+
+
+.box2:hover{
+  -webkit-box-shadow: 0px 1px 9px 0px rgb(139 92 246);
+  -moz-box-shadow: 0px 1px 9px 0px rgb(139 92 246);
+  box-shadow: 0px 1px 9px 0px rgb(139 92 246);
+}
+
+
+.box3{
+  -webkit-box-shadow: 0px 1px 9px 0px rgb(255, 164, 222);
+  -moz-box-shadow: 0px 1px 9px 0px rgb(238, 162, 253);
+  box-shadow: 0px 1px 9px 0px rgb(190, 133, 247);
+}
+
+
+/* src/styles/scrollbar.css */
+.scrollbar-hide {
+  /* For WebKit browsers (Chrome, Safari, etc.) */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* For Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+.a{
+  height: 80vh;
+}
+
+
+
+
+
+
+
+
+
+
+
