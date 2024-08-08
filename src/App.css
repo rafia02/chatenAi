@@ -66,6 +66,13 @@ body {
 }
 
 
+/* .box_price:hover{
+  -webkit-box-shadow: 0px 1px 9px 0px rgb(102, 36, 255);
+  -moz-box-shadow: 0px 1px 9px 0px rgb(102, 36, 255);
+  box-shadow: 0px 1px 9px 0px rgb(102, 36, 255);
+} */
+
+
 .box2:hover{
   -webkit-box-shadow: 0px 1px 9px 0px rgb(139 92 246);
   -moz-box-shadow: 0px 1px 9px 0px rgb(139 92 246);
@@ -101,6 +108,41 @@ body {
 
 
 
+
+.gradient-texts {
+  background: linear-gradient(90deg, #cc04fe, #b425fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+.bg{
+
+background: #090D4C;
+background: radial-gradient(at center top, #090D4C, #05072A);
+}
+
+
+
+
+/* styles.css */
+@keyframes move {
+  0% {
+    transform: translateX(0%);
+
+  }
+  100% {
+    transform: translateX(100%);
+
+  }
+}
+
+.move-infinite {
+  animation: move 3s linear infinite;
+
+}
 
 
 

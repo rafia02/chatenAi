@@ -3,6 +3,7 @@ import Hero from '../Components/Home/Hero'
 import VideoSection from '../Components/Home/VideoSection'
 import Spinner from '../Components/Shared/Spinner'
 import ContentAi from '../Components/Home/ContentAi'
+import Pricing from '../Components/Home/Pricing'
 
 
 
@@ -12,6 +13,7 @@ const Homepage = () => {
       <Hero></Hero>
       <VideoSection></VideoSection>
       <ContentAi></ContentAi>
+      <Pricing></Pricing>
      
     </div>
   )
