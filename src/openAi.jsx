@@ -70,7 +70,7 @@ const WorkspaceLayout = () => {
     console.log("botmassgae :", botMessage);
     setMessages([...newMessages, botMessage]);
 
-    fetch("http://localhost:5000/datas", {
+    fetch("https://hati-server.vercel.app/datas", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -89,7 +89,7 @@ const WorkspaceLayout = () => {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:5000/datas`)
+    fetch(`https://hati-server.vercel.app/datas`)
       .then((res) => res.json())
       .then((data) => {
         // console.log("..................................", data);
@@ -102,7 +102,7 @@ const WorkspaceLayout = () => {
 
 
   useEffect(() => {
-    fetch(`http://localhost:5000/sub`)
+    fetch(`https://hati-server.vercel.app/sub`)
       .then((res) => res.json())
       .then((data) => {
         console.log("..................................", data);

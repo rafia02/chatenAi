@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "../../App.css";
 import { Typewriter } from "react-simple-typewriter";
 import { BsStars } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { context } from "../../Context/AuthContex";
 
 const Hero = () => {
+  const {user} = useContext(context)
   const [stars, setStars] = useState([
     { id: 1, left: "10%", top: "20%", delay: "0s" },
     { id: 2, left: "50%", top: "50%", delay: "0.5s" },
@@ -42,7 +44,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <Link to="/workspace" className="flex justify-center mt-10 md:mt-20">
+      <Link to={`${user?.email ? "/workspace" : "/login"}`} className="flex justify-center mt-10 md:mt-20">
         <button className="bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-400 px-5 py-2 text-xl rounded-full font-medium text-gray-50">
           Get a free trial
         </button>

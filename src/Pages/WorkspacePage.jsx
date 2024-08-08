@@ -52,7 +52,7 @@ const WorkspacePage = () => {
     console.log("botmassgae :", botMessage);
     setMessages([...newMessages, botMessage]);
 
-    fetch("http://localhost:5000/datas", {
+    fetch("https://hati-server.vercel.app/datas", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -70,7 +70,7 @@ const WorkspacePage = () => {
       .catch((e) => console.log(e));
   };
 
-  fetch(`http://localhost:5000/datas?count=${count}`)
+  fetch(`https://hati-server.vercel.app/datas?count=${count}`)
     .then((res) => res.json())
     .then((data) => {
       console.log("..................................", data);

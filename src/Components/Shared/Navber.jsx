@@ -76,7 +76,7 @@ const Navber = () => {
                 )}
                 {/* <Link to="/login" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium">Log in</Link> */}
                 <button className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-400 px-3 rounded-full font-medium text-gray-50">
-                  Get Started free
+                <Link to={`${user?.email ? "/workspace" : "/login"}`}>Get Started free</Link>
                 </button>
               </div>
             </div>

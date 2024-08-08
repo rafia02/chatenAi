@@ -12,7 +12,7 @@ const Modal = ({ show, onClose, onAdd}) => {
     const { data: allsub = [], refetch } = useQuery({
       queryKey: ['sub', user?.email],
       queryFn: async () => {
-          // const res = await fetch(`http://localhost:5000/sub?email=${user?.email}`)
+          // const res = await fetch(`https://hati-server.vercel.app/sub?email=${user?.email}`)
           // const data = await res.json()
           return data
   
@@ -27,7 +27,7 @@ const Modal = ({ show, onClose, onAdd}) => {
 
 
 
-      fetch("http://localhost:5000/sub", {
+      fetch("https://hati-server.vercel.app/sub", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

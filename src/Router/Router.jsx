@@ -18,6 +18,6 @@ import Content from "../Components/Workspace/Content"
 
 //     {path: "/workspace", element: <WorkspaceLayout></WorkspaceLayout>, children: [
 //         // {path: "/workspace", element: <WorkspacePage></WorkspacePage>},
-//         {path: "/workspace/:id", loader: ({ params }) => fetch(`http://localhost:5000/datas?sub=${params.id}?email=${user?.email}`), element: <Content></Content>}
+//         {path: "/workspace/:id", loader: ({ params }) => fetch(`https://hati-server.vercel.app/datas?sub=${params.id}?email=${user?.email}`), element: <Content></Content>}
 //     ]}
 // ])
