@@ -6,7 +6,7 @@ import toast from 'react-hot-toast';
 
 const Signup = () => {
 
-    const { signup, profileupdate } = useContext(context)
+    const { signup } = useContext(context)
     const { register, handleSubmit, formState: { errors } } = useForm();
     const navigate = useNavigate()
     const handleSignup = (data) => {
@@ -17,12 +17,13 @@ const Signup = () => {
         signup(data.email, data.password)
             .then(res => {
                 console.log(res.user)
-                toast.success("Successly sign up")
-            })
-            .then(data => {
-                console.log(data)
+                toast.success("Successly sign up")  
                 navigate("/")
+                window.location.reload()
             })
+          
+               
+
             .catch(e => console.error(e))
 
     };

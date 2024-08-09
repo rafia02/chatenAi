@@ -18,6 +18,7 @@ const Login = () => {
         setErr("")
         toast.success('Sucessfuly log in')
         navigate("/")
+        window.location.reload()
     
       })
 
@@ -53,9 +54,9 @@ const Login = () => {
                     <input type="submit" value="Log in" className='mt-4 text-white font-bold px-4 py-2 text-center w-full hover:cursor-pointer mb-3 bg-[#cf457c] rounded-full  hover:bg-purple-600 duration-500'/>
 
                 </form>
-                <div className='text-center mx-5 px-5 mt-5 mb-3 w-auto rounded-full  border-2 border-[#cf457c] border-opacity-50 hover:cursor-pointer  hover:bg-[#ff726524] duration-500 '>
+                {/* <div className='text-center mx-5 px-5 mt-5 mb-3 w-auto rounded-full  border-2 border-[#cf457c] border-opacity-50 hover:cursor-pointer  hover:bg-[#ff726524] duration-500 '>
                     <button type="submit" className="text-sm md:text-md font-bold px-4 py-2 ">Continue with google</button>
-                </div>
+                </div> */}
                 <p className='mx-5'>Don't have an account? Please <Link to="/signup" className='text-[#cf457c] font-bold'>Sing up</Link></p>
             </div>
         </div>

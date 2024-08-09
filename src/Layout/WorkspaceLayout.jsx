@@ -13,15 +13,17 @@ import Content from "../Components/Workspace/Content";
 import { Typewriter } from "react-simple-typewriter";
 
 const WorkspaceLayout = () => {
-  const { user } = useContext(context);
-  const [isOpen, setIsOpen] = useState(true);
-  const [input, setInput] = useState("");
-  const [messages, setMessages] = useState([]);
+  const { user } = useContext(context)
+  const [isOpen, setIsOpen] = useState(true)
+  const [input, setInput] = useState("")
+  const [messages, setMessages] = useState([])
 
-  const [elements, setElements] = useState([]);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [sub, setSub] = useState("");
-  const [show, setShow] = useState("");
+  const [elements, setElements] = useState([])
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [sub, setSub] = useState("")
+  const [show, setShow] = useState("")
+
+
 
   const [filteredData, setFilterData] = useState([]);
 
@@ -262,14 +264,15 @@ const WorkspaceLayout = () => {
                             <p className="text-lg">You</p>
 
                             <p className="text-[#8386c4] mt-2">
-                              <Typewriter
+                              {/* <Typewriter
                                 words={[msg.sub]}
-                                loop:true
+                                loop:false
                                 cursor
                                 cursorStyle="|"
                                 typeSpeed={10}
                                 deleteSpeed={0}
-                              />
+                              /> */}
+                              {msg.sub}
                             </p>
                           </div>
                         </div>
@@ -291,14 +294,15 @@ const WorkspaceLayout = () => {
                                 </button>
                               </div>
                               <p className="text-[#8a8bc4] mt-2">
-                                <Typewriter
+                                {/* <Typewriter
                                   words={[msg.content]}
-                                  loop:true
+                                  loop:false
                                   cursor
                                   cursorStyle="|"
-                                  typeSpeed={10}
+                                  typeSpeed={2}
                                   deleteSpeed={0}
-                                />
+                                /> */}
+                                {msg.content}
                               </p>
                             </div>
                           </div>
